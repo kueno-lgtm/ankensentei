@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04. 広告出稿・CV設定｜リスティング出稿完全ガイド｜A8キャンパス</title>
+<meta name="description" content="Google広告の仕組みから、アカウント・キャンペーン・グループの3階層、キーワードのマッチタイプ3種類、コンバージョン設定の2つの方法までを初心者向けに解説。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__logo"><a href="index.html">A8キャンパス</a></div>
+    <nav class="site-header__nav">
+      <a href="index.html">講座TOP</a>
+      <a href="01_案件選定.html">案件選定</a>
+      <a href="02_リサーチ.html">リサーチ</a>
+      <a href="03_記事LP.html">記事LP</a>
+      <a href="04_広告出稿とCV設定.html">出稿・CV</a>
+      <a href="05_メンテナンス.html">メンテナンス</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="breadcrumb">
+  <div class="breadcrumb__inner">
+    A8.net<span class="breadcrumb__sep">&gt;</span>
+    A8キャンパス<span class="breadcrumb__sep">&gt;</span>
+    <a href="index.html">リスティング出稿完全ガイド</a><span class="breadcrumb__sep">&gt;</span>
+    広告出稿・CV設定
+  </div>
+</nav>
+
+<div class="layout">
+  <main class="main">
+
+    <h1>リスティング広告アフィリエイト「広告出稿・CV設定」完全ガイド｜初心者が最初にやるべき設定手順</h1>
+
+    <div class="article-meta">
+      <strong>監修：</strong>けいぞう（現役PPCアフィリエイター）
+    </div>
+
+    <div class="toc">
+      <div class="toc__title">もくじ</div>
+      <ol class="toc__list">
+        <li><a href="#section-1">この記事でわかること</a></li>
+        <li><a href="#section-2">はじめに：出稿前に「計測の準備」をしないと広告費が無駄になる</a></li>
+        <li><a href="#section-3">Google広告の仕組み：広告ランクとオークション</a></li>
+        <li><a href="#section-4">Google広告の3階層構造</a></li>
+        <li><a href="#section-5">キーワードのマッチタイプ：3種類の使い分け</a></li>
+        <li><a href="#section-6">コンバージョン設定：なぜ必須なのか</a></li>
+        <li><a href="#section-7">出稿後の確認事項チェックリスト</a></li>
+      </ol>
+    </div>
+
+    <h2 id="section-1">この記事でわかること</h2>
+    <ul>
+      <li>Google広告の仕組みと「広告ランク」が決まる仕組み</li>
+      <li>アカウント・キャンペーン・グループの3階層の役割</li>
+      <li>キーワードのマッチタイプ3種類と初心者向けの選び方</li>
+      <li>コンバージョン設定の重要性と2つの設定方法</li>
+    </ul>
+
+    <h2 id="section-2">はじめに：出稿前に「計測の準備」をしないと広告費が無駄になる</h2>
+    <p>リスティング広告アフィリエイトで最初にやるべきことは、<strong>広告を出す前にコンバージョン計測を設定すること</strong>です。</p>
+    <p>計測なしで出稿すると「どのキーワードで成果が出ているのか」「どのページで離脱しているのか」が一切わかりません。改善のしようがなく、ただ広告費が消えていきます。</p>
+
+    <div class="callout callout--warn">
+      <p><strong>⚠️ この記事を読む前の大前提</strong></p>
+      <p>コンバージョン設定は最初は難しく感じます。でも1回設定してしまえば後は簡単です。面倒でも必ず最初に設定してから出稿してください。</p>
+    </div>
+
+    <h2 id="section-3">Google広告の仕組み：広告ランクとオークション</h2>
+    <p>Google広告では、「どの広告をどの位置に表示するか」はオークション（競争入札）で決まります。</p>
+
+    <h3>広告ランクの計算式</h3>
+    <pre>広告ランク ＝ 入札単価 × 広告の品質スコア</pre>
+    <p>点数が高いほど上位に表示されます。つまり、<strong>お金をたくさん払うだけでなく、広告の品質を上げることでも上位表示できる</strong>ということです。</p>
+
+    <h3>品質スコアの3つの基準</h3>
+    <table>
+      <thead>
+        <tr><th>基準</th><th>内容</th><th>評価</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>クリック率（CTR）</td><td>広告が表示された回数に対してクリックされた割合</td><td>平均より上・平均・平均より下</td></tr>
+        <tr><td>広告の関連性</td><td>キーワードと広告文の関連度</td><td>同上</td></tr>
+        <tr><td>ランディングページの利便性</td><td>読者がLPを訪れた後の体験の質（離脱率・滞在時間など）</td><td>同上</td></tr>
+      </tbody>
+    </table>
+
+    <p>3つすべてが「平均より上」になると、品質スコアは10点満点に近づきます。品質スコアが上がると、<strong>同じ入札単価でもより多くの人に表示され、時間とともに黒字化しやすくなります。</strong></p>
+
+    <h2 id="section-4">Google広告の3階層構造</h2>
+    <p>Google広告は「アカウント → キャンペーン → グループ」の3階層で管理します。</p>
+
+    <h3>アカウント</h3>
+    <ul>
+      <li>支払い情報・管理者設定を行う最上位の概念</li>
+      <li>ジャンルごと（育毛剤・脱毛・クレカなど）にアカウントを作るイメージ</li>
+      <li>一度設定したらほぼいじらない</li>
+    </ul>
+
+    <h3>キャンペーン</h3>
+    <ul>
+      <li>広告の種類（検索 / ディスプレイなど）を選ぶ</li>
+      <li>入札戦略（手動入札 / 自動入札）を設定する</li>
+      <li>1日の予算を設定する</li>
+    </ul>
+    <p>初心者は最初は<strong>手動入札</strong>を選んでください。自動入札はデータが蓄積されていないと機械学習の精度が低く、赤字になりやすいです。</p>
+
+    <h3>広告グループ</h3>
+    <ul>
+      <li>出稿キーワードと入札単価・広告文を設定する</li>
+      <li><strong>日々の広告運用で一番よくいじる場所</strong></li>
+    </ul>
+    <p>グループの分け方の例（脱毛の場合）：</p>
+    <ul>
+      <li>地域別：「東京 脱毛サロン」「大阪 脱毛サロン」</li>
+      <li>訴求別：「全身脱毛サロン」「ワキ脱毛サロン」</li>
+    </ul>
+
+    <h2 id="section-5">キーワードのマッチタイプ：3種類の使い分け</h2>
+    <p>Google広告では、設定したキーワードに対して「どの範囲の検索語句に広告を出すか」を3種類のマッチタイプで指定できます。</p>
+
+    <div class="callout callout--warn">
+      <p><strong>⚠️ 注意</strong></p>
+      <p>ネット上にはマッチタイプに関する古い情報が多く流通しています。仕様は頻繁に変わるため、必ずGoogle広告の公式サイトで最新情報を確認してください。</p>
+    </div>
+
+    <h3>①インテントマッチ（旧：部分一致）</h3>
+    <p>キーワードを記号なしで設定すると、自動的にインテントマッチになります。Googleの機械学習が検索意図（インテント）をくみ取り、関連性が高いと判断した検索語句に広告を出します。</p>
+    <ul>
+      <li>設定例：<code>女性用 帽子</code></li>
+      <li>表示される検索語句の例：「女性用帽子」「レディース帽子」「婦人用帽子」など意図が近いキーワード全般</li>
+    </ul>
+    <p><strong>メリット</strong>：幅広いキーワードで出稿され、予期しない成果の出るキーワードが見つかる可能性がある<br>
+    <strong>デメリット</strong>：収益性の低いキーワードでも出稿されるため、赤字リスクが高い</p>
+
+    <h3>②フレーズ一致</h3>
+    <p>キーワードをダブルコーテーション<code>" "</code>で囲んで設定します。指定したフレーズの意味合いを含む検索語句に広告が表示されます。</p>
+    <ul>
+      <li>設定例：<code>"女性用 帽子"</code></li>
+      <li>表示される検索語句の例：「女性用 帽子 おすすめ」「かわいい 女性用 帽子」など、フレーズの意味を含む検索語句</li>
+    </ul>
+    <p><strong>メリット</strong>：インテントマッチより赤字リスクを抑えながら、ある程度幅広いキーワードをカバーできる<br>
+    <strong>デメリット</strong>：インテントマッチに比べてキーワードの取りこぼしが生じる</p>
+
+    <div class="callout callout--tip">
+      <p><strong>💡 初心者のおすすめ</strong></p>
+      <p>月3万円を目標とする段階では「フレーズ一致」で出稿するのが最もバランスが良いです。赤字リスクを抑えつつ、成果の出るキーワードを発見できます。</p>
+    </div>
+
+    <h3>③完全一致</h3>
+    <p>キーワードを角括弧<code>[ ]</code>で囲んで設定します。</p>
+    <ul>
+      <li>設定例：<code>[育毛剤 おすすめ]</code></li>
+      <li>表示される検索語句：指定キーワードとほぼ完全に一致する検索語句（類似表記・語順変えも含む）</li>
+    </ul>
+    <p><strong>活用シーン</strong>：フレーズ一致で成果が出た「効果的な検索語句」を完全一致で登録し、入札単価を少し上げることで、その語句への表示を優先させる戦略に使います。</p>
+
+    <h2 id="section-6">コンバージョン設定：なぜ必須なのか</h2>
+
+    <h3>コンバージョンとは</h3>
+    <p>コンバージョンとは「サイト訪問者がLPの目標アクション（アフィリエイトリンクのクリック）を起こした状態」のことです。</p>
+    <p>リスティングアフィリエイトには2種類のコンバージョンがあります：</p>
+
+    <table>
+      <thead>
+        <tr><th>種類</th><th>内容</th><th>誰が管理するか</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>中間コンバージョン</strong>（マイクロCV）</td><td>アフィリエイトリンクをクリックして広告主サイトへ遷移した数</td><td>アフィリエイター側でコントロール可能</td></tr>
+        <tr><td><strong>最終コンバージョン</strong>（成約）</td><td>広告主の販売ページから実際に購入・申し込みが発生した数</td><td>広告主側のLP品質や認知度に依存</td></tr>
+      </tbody>
+    </table>
+
+    <h3>コンバージョン設定の2つの方法</h3>
+    <table>
+      <thead>
+        <tr><th>方法</th><th>メリット</th><th>デメリット</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>①クッションページ方式</strong>（初心者向け）</td><td>実装が比較的簡単</td><td>クッションページ経由で読み込み時間が少し伸びる</td></tr>
+        <tr><td><strong>②Google Tag Manager（GTM）方式</strong></td><td>クッションページ不要でLPから広告主サイトへの遷移がスムーズ</td><td>GTMの設定が難しい</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>初心者はクッションページ方式を選んでください。</strong></p>
+
+    <h3>クッションページ方式の仕組み</h3>
+    <pre>通常のアフィリエイト流れ：
+アフィリエイトサイト → [アフィリエイトリンク] → 広告主LP
+
+コンバージョン設定後の流れ：
+アフィリエイトサイト → [アフィリエイトリンク] → クッションページ（CV発火）→ 自動遷移 → 広告主LP</pre>
+
+    <p>クッションページにGoogle広告のコンバージョンタグを埋め込むことで、「公式サイトへのボタンが押されたら1コンバージョン」を計測できるようになります。</p>
+
+    <h3>コンバージョン設定の手順（概要）</h3>
+    <ol>
+      <li>Google広告管理画面 → ツールと設定 → 測定 → コンバージョン → ＋ボタン</li>
+      <li>Webサイトを選択 → カテゴリ：購入 → コンバージョン名を入力（例：ミュゼプラチナム）</li>
+      <li>値は「使用しない」、カウント方法は「初回のみ」を選択</li>
+      <li>グローバルサイトタグ・イベントスニペットのコードを発行してコピー</li>
+      <li>WordPressでクッションページ（固定ページ）を新規作成</li>
+      <li>プラグイン「Add Page Headスパン」をインストールして有効化</li>
+      <li>記事編集画面の下部「Add to Head」フォームに発行したコードを貼り付ける</li>
+      <li>クッションページのURLをアフィリエイトサイトのCTAボタンリンクに設定する</li>
+    </ol>
+
+    <div class="callout callout--tip">
+      <p><strong>💡 注意点</strong></p>
+      <ul>
+        <li>コードの貼り付け順序は「グローバルサイトタグ → イベントスニペット → メタリフレッシュタグ」の順番を守る</li>
+        <li>すべてのコードは<strong>半角英数で入力</strong>する（全角だと機能しない）</li>
+        <li>コンバージョン設定後、管理画面への反映まで数時間〜1日かかる場合がある</li>
+      </ul>
+    </div>
+
+    <h2 id="section-7">出稿後の確認事項チェックリスト</h2>
+    <table>
+      <thead>
+        <tr><th>チェック項目</th><th>確認</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>コンバージョンタグが正しく発火しているか（テスト送信）</td><td>✅</td></tr>
+        <tr><td>広告の審査が通っているか（有効になっているか）</td><td>✅</td></tr>
+        <tr><td>1日の予算が意図した金額に設定されているか</td><td>✅</td></tr>
+        <tr><td>広告グループのキーワードが「フレーズ一致」になっているか</td><td>✅</td></tr>
+        <tr><td>商標キーワードで出稿していないか（案件レギュレーションを再確認）</td><td>✅</td></tr>
+      </tbody>
+    </table>
+
+    <p>広告が動き始めたら、いよいよ<strong>メンテナンス（運用・改善）</strong>のフェーズです。データを見ながらCPAを下げ、コンバージョン率を上げる改善を繰り返すことで、収益が安定してきます。</p>
+
+    <nav class="article-nav">
+      <a class="article-nav__link" href="03_記事LP.html">
+        <div class="article-nav__label">← 前の記事</div>
+        <div class="article-nav__title">03. 記事LP（ランディングページ）作成ガイド</div>
+      </a>
+      <a class="article-nav__link article-nav__link--next" href="05_メンテナンス.html">
+        <div class="article-nav__label">次の記事 →</div>
+        <div class="article-nav__title">05. メンテナンス｜データを見て成果を上げる方法</div>
+      </a>
+    </nav>
+
+    <p class="disclaimer">本記事はA8.net公式コンテンツです。アフィリエイトで成果を上げるためには継続的な学習と実践が必要です。必ずしも利益が保証されるものではありません。</p>
+  </main>
+
+  <aside class="sidebar">
+    <nav class="course-nav" aria-label="リスティング出稿完全ガイド ナビゲーション">
+      <div class="course-nav__title">リスティング<br>出稿完全ガイド</div>
+      <ul class="course-nav__list">
+        <li class="course-nav__item">
+          <a class="course-nav__link" href="01_案件選定.html">
+            <span class="course-nav__number">01</span>
+            <span class="course-nav__text">案件選定｜初心者がうまくいくジャンルの選び方</span>
+          </a>
+        </li>
+        <li class="course-nav__item">
+          <a class="course-nav__link" href="02_リサーチ.html">
+            <span class="course-nav__number">02</span>
+            <span class="course-nav__text">リサーチ｜競合の少ないキーワードの見つけ方</span>
+          </a>
+        </li>
+        <li class="course-nav__item">
+          <a class="course-nav__link" href="03_記事LP.html">
+            <span class="course-nav__number">03</span>
+            <span class="course-nav__text">記事LP（ランディングページ）作成ガイド</span>
+          </a>
+        </li>
+        <li class="course-nav__item is-active">
+          <a class="course-nav__link" href="04_広告出稿とCV設定.html">
+            <span class="course-nav__number">04</span>
+            <span class="course-nav__text">広告出稿・CV設定｜最初にやるべき設定手順</span>
+          </a>
+        </li>
+        <li class="course-nav__item">
+          <a class="course-nav__link" href="05_メンテナンス.html">
+            <span class="course-nav__number">05</span>
+            <span class="course-nav__text">メンテナンス｜データを見て成果を上げる方法</span>
+          </a>
+        </li>
+      </ul>
+      <a class="course-nav__more" href="index.html">他のコンテンツも見る</a>
+    </nav>
+
+    <div class="sidebar-cta">
+      <div class="sidebar-cta__title">サイトやSNSを<br>収益化しよう</div>
+      <a class="sidebar-cta__button" href="#">無料会員登録</a>
+    </div>
+  </aside>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__links">
+      <a href="#">アフィリエイトのA8.net</a>
+      <a href="#">ヘルプ</a>
+      <a href="#">お問い合わせ</a>
+      <a href="#">会社概要</a>
+      <a href="#">個人情報保護方針</a>
+    </div>
+    <div class="site-footer__copy">Copyright &copy; FAN Communications, Inc. All Rights Reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
